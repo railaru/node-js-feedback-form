@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nodemailer Email Example</title>
+    <link rel="stylesheet" href="material.min.css">
+    <style>
+      .feedback-container{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        padding: 20px;        
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>    
+      <form class="feedback-container mdl-shadow--2dp" action="/send-email" method="post">
+        <h6>Care to give us some feedback?</h6>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" name='to' type="text" id="sample3">
+          <label class="mdl-textfield__label" for="sample3">To:</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" name='subject' type="text" id="sample3">
+          <label class="mdl-textfield__label" for="sample3">Subject:</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield">
+            <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" name="body"></textarea>
+            <label class="mdl-textfield__label" for="sample5">Your comments...</label>
+        </div>
+        <br>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" type="submit">
+          Submit
+        </button>
+      </form>
+    
+    <script src="material.min.js"></script>
+  </body>
+</html>
